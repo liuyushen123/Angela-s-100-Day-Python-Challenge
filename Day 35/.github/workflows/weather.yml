@@ -1,0 +1,32 @@
+name: Daily Weather SMS
+
+on:
+  schedule:
+    - cron: '13 12 * * *'
+  workflow_dispatch:      
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests twilio google-genai
+
+      - name: Run script
+        env:
+          ACCOUNT_SID: ${{ secrets.ACCOUNT_SID }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OWM_KEY: ${{ secrets.OWM_KEY }}
+          BARK_URL: ${{ secrets.BARK_URL }}
+        run: python main.py

@@ -1,0 +1,39 @@
+/* 1. All paragraph tags */
+p {
+  color: red;
+}
+
+/* 2. Class selector */
+.note {
+  font-size: 20px;
+}
+
+/* 3. ID selector */
+#id-selector-demo {
+  color: green;
+}
+
+/* 4. Attribute selector */
+li[value="4"] {
+  color: blue;
+}
+
+ol {
+  text-align: center;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+li {
+  list-style-position: inside;
+}
+
+p {
+  color: red;
+  margin-bottom: 0; /* Removes the space below the paragraph */
+}
+
+/* 5. Universal selector */
+* {
+  text-align: center;
+}
