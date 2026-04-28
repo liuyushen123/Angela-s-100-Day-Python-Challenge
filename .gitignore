@@ -1,4 +1,18 @@
-main.py
-tempCodeRunnerFile.py
-main.py
-tempCodeRunnerFile.py
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables (keep your API keys secret later in the course!)
+.env
+
+# OS generated files
+Thumbs.db
+.idea/
+.vscode/
+.DS_Store
