@@ -21,3 +21,4 @@ Day 49/selenium_profile/
 selenium_profile/
 .venv/
 __pycache__/
+**/.env
