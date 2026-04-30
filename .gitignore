@@ -16,3 +16,8 @@ Thumbs.db
 .idea/
 .vscode/
 .DS_Store
+
+Day 49/selenium_profile/
+selenium_profile/
+.venv/
+__pycache__/
