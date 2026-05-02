@@ -1,24 +1,40 @@
-# Byte-compiled / optimized / DLL files
+# =========================
+# Python & Byte-compiled
+# =========================
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
 
-# Virtual environments
+# =========================
+# Virtual Environments
+# =========================
 venv/
 env/
 .venv/
 
-# Environment variables (keep your API keys secret later in the course!)
+# =========================
+# Environment Variables & Secrets
+# =========================
 .env
+**/.env
+*.env
 
-# OS generated files
+# =========================
+# OS & Editor Generated Files
+# =========================
+.DS_Store
 Thumbs.db
 .idea/
 .vscode/
-.DS_Store
 
-Day 49/selenium_profile/
-selenium_profile/
-.venv/
-__pycache__/
-**/.env
+# =========================
+# Testing & Notebooks
+# =========================
+.pytest_cache/
+.ipynb_checkpoints/
+
+# =========================
+# Course Specific / App Data
+# =========================
+**/selenium_profile/
