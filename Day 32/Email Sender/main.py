@@ -2,7 +2,7 @@ import datetime as dt
 import random
 import smtplib
 
-my_email = "liuyushen123@gmail.com"
+my_email = "placeholder_email"
 my_password = "dscsgxbhdqmghqff"
 
 
@@ -26,10 +26,10 @@ sam_date_of_birth = dt.datetime(
 
 with open("quotes.txt") as file:
     message_to_send = file.readlines()
-    quote, author = random.choice(message_to_send).split("-")
+    author = random.choice(message_to_send).split("-")
+    print(author)
     send_message(
         "Keep it up!",
-        quote,
         author,
-        "32923146@nebraska.edu",
+        "pleaceholder_email",
     )

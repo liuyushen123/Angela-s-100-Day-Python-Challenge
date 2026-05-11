@@ -53,7 +53,7 @@ def register_account(name, email, password):
     register.click()
 
 
-def login(email="liuyushen123@gmail.com", password="liuyushen"):
+def login(email="shenliuyu@gigaTest.com", password="adjlawjdLJE@LQdjo2012"):
     login_btn = wait.until(ec.element_to_be_clickable((By.ID, "login-button")))
     login_btn.click()
 

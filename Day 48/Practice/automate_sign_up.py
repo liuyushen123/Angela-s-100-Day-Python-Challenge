@@ -17,5 +17,5 @@ button = driver.find_element(By.CSS_SELECTOR, value="form button")
 
 first_name_input.send_keys("Yuchen")
 last_name_input.send_keys("Liu")
-email_input.send_keys("liuyushen123@gmail.com")
+email_input.send_keys("yuliushen123@gig_test.com")
 button.click()
