@@ -1,8 +1,4 @@
-import matplotlib.pylab as plt
-import seaborn as sns
+x = [x for x in range(1, 6)]
+y = [y**3 for y in x]
 
-iris = sns.load_dataset("iris")
-iris.describe()
-
-plt.boxplot(iris["sepal_length"], data="iris")
-plt.show()
+print(x, y)
