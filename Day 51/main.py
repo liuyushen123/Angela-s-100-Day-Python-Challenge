@@ -7,8 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 EMAIL = "32923146@nebraska.edu"
 PASSWORD = "MC5na1qNlRgnoe2B"
-PROMISED_UP = 150
-PROMISED_DOWN = 10
+PROMISED_DOWN = 1000
+PROMISED_UP = 1000
 URL = "https://app.100daysofpython.dev/services/y"
 
 
@@ -45,21 +45,26 @@ class InternetSpeedTwitterBot:
         )
 
         print(f"Down: {self.down}")
-        print(f"Up: {self.down}")
+        print(f"Up: {self.up}")
         time.sleep(3)
 
     def tweet_at_provider(self):
         tweet_compose = self.driver.find_element(
             By.XPATH, value="/html/body/div[1]/nav/button"
         )
-        tweet = f"Hey Internet Provider, why is my speed {self.down}down/{self.up}up when I pay for {PROMISED_DOWN}down/{PROMISED_UP}up?!"
+        if self.down < PROMISED_DOWN or self.up < PROMISED_UP:
+            tweet = f"Hey my internet provider, I’m seeing {self.down} down / {self.up} up, but I pay for {PROMISED_DOWN}/{PROMISED_UP}. Can you help?"
+        else:
+            tweet = f"Hey my internet provider, my speed is great! Hitting {self.down} down / {self.up} up as promised. Thanks!"
         tweet_compose.send_keys(tweet)
 
-        time.sleep(2)
         tweet_button = self.driver.find_element(By.XPATH, '//*[@id="modal-post-btn"]')
         tweet_button.click()
 
+        time.sleep(2)
+
         input()
+
         self.driver.quit()
 
     # Navigating page
