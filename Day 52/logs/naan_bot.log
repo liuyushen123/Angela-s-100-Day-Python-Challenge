@@ -1,0 +1,1578 @@
+2026-06-25 02:23:52,601 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 02:23:53,966 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 02:24:03,201 | INFO | __main__ | Closing browser...
+2026-06-25 02:28:21,786 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 02:28:23,328 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 02:37:58,610 | INFO | __main__ | Closing browser...
+2026-06-25 02:37:58,635 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=50806): Failed to establish a new connection: [Errno 61] Connection refused")': /session/77e5163dd237c1a6e7f579b257b69478
+2026-06-25 02:37:58,636 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=50806): Failed to establish a new connection: [Errno 61] Connection refused")': /session/77e5163dd237c1a6e7f579b257b69478
+2026-06-25 02:37:58,639 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=50806): Failed to establish a new connection: [Errno 61] Connection refused")': /session/77e5163dd237c1a6e7f579b257b69478
+2026-06-25 02:38:01,094 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 02:38:02,584 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 02:58:02,975 | INFO | __main__ | Closing browser...
+2026-06-25 03:05:56,204 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 03:05:57,604 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 03:05:57,604 | ERROR | __main__ | An unexpected error occurred
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/main.py", line 27, in <module>
+    for account in config.SIMILAR_ACCOUNTS:
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'SIMILAR_ACCOUNTS'
+2026-06-25 03:05:57,617 | INFO | __main__ | Closing browser...
+2026-06-25 03:06:16,727 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 03:06:17,661 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 03:06:17,661 | INFO | root | Navigating to chefsteps...
+2026-06-25 03:09:05,236 | INFO | __main__ | Closing browser...
+2026-06-25 03:09:05,242 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54451): Failed to establish a new connection: [Errno 61] Connection refused")': /session/f942c2285464dd48675f3d8aebff3ffd
+2026-06-25 03:09:05,243 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54451): Failed to establish a new connection: [Errno 61] Connection refused")': /session/f942c2285464dd48675f3d8aebff3ffd
+2026-06-25 03:09:05,244 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54451): Failed to establish a new connection: [Errno 61] Connection refused")': /session/f942c2285464dd48675f3d8aebff3ffd
+2026-06-25 03:09:11,740 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 03:09:12,567 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 03:09:12,567 | INFO | root | Navigating to chefsteps...
+2026-06-25 03:09:12,914 | ERROR | __main__ | An unexpected error occurred
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/main.py", line 29, in <module>
+    homepage_bot.follow_followers()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 29, in follow_followers
+    notifications[0].click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+0   chromedriver                        0x00000001007931e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x000000010078b2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010023b178 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73572
+3   chromedriver                        0x0000000100284a68 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 374868
+4   chromedriver                        0x000000010027adcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+5   chromedriver                        0x000000010027a854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+6   chromedriver                        0x00000001002c2f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+7   chromedriver                        0x0000000100279354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+8   chromedriver                        0x0000000100751370 cxxbridge1$str$ptr + 2906052
+9   chromedriver                        0x0000000100754af0 cxxbridge1$str$ptr + 2920260
+10  chromedriver                        0x00000001007382b0 cxxbridge1$str$ptr + 2803460
+11  chromedriver                        0x0000000100755384 cxxbridge1$str$ptr + 2922456
+12  chromedriver                        0x00000001007297d0 cxxbridge1$str$ptr + 2743332
+13  chromedriver                        0x000000010077a24c cxxbridge1$str$ptr + 3073696
+14  chromedriver                        0x000000010077a3ac cxxbridge1$str$ptr + 3074048
+15  chromedriver                        0x000000010078af04 cxxbridge1$str$ptr + 3142488
+16  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 03:09:12,916 | INFO | __main__ | Closing browser...
+2026-06-25 03:10:20,781 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 03:10:21,958 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 03:10:21,958 | INFO | root | Navigating to chefsteps...
+2026-06-25 03:11:56,803 | INFO | __main__ | Closing browser...
+2026-06-25 03:11:56,812 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54552): Failed to establish a new connection: [Errno 61] Connection refused")': /session/797ebc6bcc2f09c08daaff6db12d0fe1
+2026-06-25 03:11:56,814 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54552): Failed to establish a new connection: [Errno 61] Connection refused")': /session/797ebc6bcc2f09c08daaff6db12d0fe1
+2026-06-25 03:11:56,817 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54552): Failed to establish a new connection: [Errno 61] Connection refused")': /session/797ebc6bcc2f09c08daaff6db12d0fe1
+2026-06-25 03:11:59,582 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 03:12:07,633 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 03:12:07,634 | INFO | root | Navigating to chefsteps...
+2026-06-25 03:13:15,621 | INFO | __main__ | Closing browser...
+2026-06-25 03:13:15,627 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54600): Failed to establish a new connection: [Errno 61] Connection refused")': /session/776c50ee5f7d2f26da42c6d438ec11da
+2026-06-25 03:13:15,628 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54600): Failed to establish a new connection: [Errno 61] Connection refused")': /session/776c50ee5f7d2f26da42c6d438ec11da
+2026-06-25 03:13:15,629 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54600): Failed to establish a new connection: [Errno 61] Connection refused")': /session/776c50ee5f7d2f26da42c6d438ec11da
+2026-06-25 03:13:17,914 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 03:13:19,048 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 03:13:19,049 | INFO | root | Navigating to chefsteps...
+2026-06-25 03:14:33,918 | INFO | __main__ | Closing browser...
+2026-06-25 03:14:33,925 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54651): Failed to establish a new connection: [Errno 61] Connection refused")': /session/85c961a3bc56b6cfa7d94a777419310c
+2026-06-25 03:14:33,926 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54651): Failed to establish a new connection: [Errno 61] Connection refused")': /session/85c961a3bc56b6cfa7d94a777419310c
+2026-06-25 03:14:33,941 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=54651): Failed to establish a new connection: [Errno 61] Connection refused")': /session/85c961a3bc56b6cfa7d94a777419310c
+2026-06-25 03:16:31,126 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 03:16:32,475 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 03:16:32,475 | INFO | root | Navigating to chefsteps...
+2026-06-25 03:17:04,382 | INFO | root | Navigating to rordongamsay...
+2026-06-25 03:17:35,122 | INFO | root | Navigating to elaineducasse...
+2026-06-25 03:18:44,729 | INFO | __main__ | Closing browser...
+2026-06-25 10:27:27,858 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 10:27:29,148 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 10:27:29,149 | INFO | root | Navigating to chefsteps...
+2026-06-25 10:27:29,532 | ERROR | __main__ | An unexpected error occurred
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/main.py", line 29, in <module>
+    homepage_bot.follow_followers()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 41, in follow_followers
+    popup = self.driver.find_element(By.CSS_SELECTOR, config.MODAL)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 823, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'value' must be a string
+  (Session info: chrome=149.0.7827.158)
+Stacktrace:
+0   chromedriver                        0x000000010098f1e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001009872ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x0000000100437374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x000000010047f1d4 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 368576
+4   chromedriver                        0x00000001004bef4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+5   chromedriver                        0x0000000100475354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+6   chromedriver                        0x000000010094d370 cxxbridge1$str$ptr + 2906052
+7   chromedriver                        0x0000000100950af0 cxxbridge1$str$ptr + 2920260
+8   chromedriver                        0x00000001009342b0 cxxbridge1$str$ptr + 2803460
+9   chromedriver                        0x0000000100951384 cxxbridge1$str$ptr + 2922456
+10  chromedriver                        0x00000001009257d0 cxxbridge1$str$ptr + 2743332
+11  chromedriver                        0x000000010097624c cxxbridge1$str$ptr + 3073696
+12  chromedriver                        0x00000001009763ac cxxbridge1$str$ptr + 3074048
+13  chromedriver                        0x0000000100986f04 cxxbridge1$str$ptr + 3142488
+14  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+15  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:27:29,537 | INFO | __main__ | Closing browser...
+2026-06-25 10:28:26,958 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 10:28:28,197 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 10:28:28,198 | INFO | root | Navigating to chefsteps...
+2026-06-25 10:28:28,659 | ERROR | __main__ | An unexpected error occurred
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/main.py", line 29, in <module>
+    homepage_bot.follow_followers()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 41, in follow_followers
+    popup = self.driver.find_element(config.MODAL)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 823, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=149.0.7827.158)
+Stacktrace:
+0   chromedriver                        0x00000001005bf1e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001005b72ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x0000000100067374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001000af1d4 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 368576
+4   chromedriver                        0x00000001000eef4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+5   chromedriver                        0x00000001000a5354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+6   chromedriver                        0x000000010057d370 cxxbridge1$str$ptr + 2906052
+7   chromedriver                        0x0000000100580af0 cxxbridge1$str$ptr + 2920260
+8   chromedriver                        0x00000001005642b0 cxxbridge1$str$ptr + 2803460
+9   chromedriver                        0x0000000100581384 cxxbridge1$str$ptr + 2922456
+10  chromedriver                        0x00000001005557d0 cxxbridge1$str$ptr + 2743332
+11  chromedriver                        0x00000001005a624c cxxbridge1$str$ptr + 3073696
+12  chromedriver                        0x00000001005a63ac cxxbridge1$str$ptr + 3074048
+13  chromedriver                        0x00000001005b6f04 cxxbridge1$str$ptr + 3142488
+14  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+15  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:28:28,664 | INFO | __main__ | Closing browser...
+2026-06-25 10:29:58,054 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 10:29:59,164 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 10:29:59,164 | INFO | root | Navigating to chefsteps...
+2026-06-25 10:30:05,583 | ERROR | __main__ | An unexpected error occurred
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/main.py", line 29, in <module>
+    homepage_bot.follow_followers()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 48, in follow_followers
+    logging("Cannot scroll")
+TypeError: 'module' object is not callable
+2026-06-25 10:30:05,587 | INFO | __main__ | Closing browser...
+2026-06-25 10:32:00,240 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 10:32:01,487 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 10:32:01,487 | INFO | root | Navigating to chefsteps...
+2026-06-25 10:32:08,110 | ERROR | root | Action Failed: Failed to scroll in HomePage. Container: ('css selector', '.followers-scroll'). Retrying...
+2026-06-25 10:32:08,111 | INFO | root | Navigating to rordongamsay...
+2026-06-25 10:32:14,425 | ERROR | root | Action Failed: Failed to scroll in HomePage. Container: ('css selector', '.followers-scroll'). Retrying...
+2026-06-25 10:32:14,426 | INFO | root | Navigating to elaineducasse...
+2026-06-25 10:32:19,004 | ERROR | root | Action Failed: Failed to scroll in HomePage. Container: ('css selector', '.followers-scroll'). Retrying...
+2026-06-25 10:33:13,103 | INFO | __main__ | Closing browser...
+2026-06-25 10:43:34,637 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 10:43:35,931 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 10:43:35,932 | INFO | root | Navigating to chefsteps...
+2026-06-25 10:43:43,681 | ERROR | root | Action Failed: Failed to scroll in HomePage. Container: ('css selector', '.followers-scroll'). Retrying...
+2026-06-25 10:43:43,684 | INFO | root | Navigating to rordongamsay...
+2026-06-25 10:43:49,302 | INFO | pages.home_page | Clicked Follow button for Meta: halwa_hana
+Halwa Hana and Sub: Halwa Hana.
+2026-06-25 10:43:53,368 | ERROR | root | Action Failed: Failed to scroll in HomePage. Container: ('css selector', '.followers-scroll'). Retrying...
+2026-06-25 10:43:53,369 | INFO | root | Navigating to elaineducasse...
+2026-06-25 10:43:58,311 | ERROR | root | Action Failed: Failed to scroll in HomePage. Container: ('css selector', '.followers-scroll'). Retrying...
+2026-06-25 10:45:21,787 | INFO | __main__ | Closing browser...
+2026-06-25 10:45:47,420 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 10:45:48,584 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 10:45:48,585 | INFO | root | Navigating to chefsteps...
+2026-06-25 10:45:56,409 | ERROR | root | Action Failed: Failed to scroll in HomePage. Container: ('css selector', '.followers-scroll'). Retrying...
+2026-06-25 10:45:56,410 | INFO | root | Navigating to rordongamsay...
+2026-06-25 10:46:04,001 | ERROR | root | Action Failed: Failed to scroll in HomePage. Container: ('css selector', '.followers-scroll'). Retrying...
+2026-06-25 10:46:04,002 | INFO | root | Navigating to elaineducasse...
+2026-06-25 10:46:09,057 | ERROR | root | Action Failed: Failed to scroll in HomePage. Container: ('css selector', '.followers-scroll'). Retrying...
+2026-06-25 10:48:30,331 | INFO | __main__ | Closing browser...
+2026-06-25 10:51:41,358 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 10:51:42,850 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 10:51:42,851 | INFO | root | Navigating to chefsteps...
+2026-06-25 10:51:43,265 | INFO | pages.home_page | Clicked Follow button for Meta: doughboy
+Dough Boy and Sub: Dough Boy.
+2026-06-25 10:51:43,314 | ERROR | pages.home_page | Failed to click Follow button: element_to_be_clickable() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 86, in unfollow_followers
+    EC.element_to_be_clickable(
+TypeError: element_to_be_clickable() takes 1 positional argument but 2 were given
+2026-06-25 10:51:43,340 | INFO | pages.home_page | Clicked Follow button for Meta: curryqueen
+Curry Queen and Sub: Curry Queen.
+2026-06-25 10:51:44,392 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="curryqueen" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 359). Other element would receive the click: <div class="naan-unfollow-overlay">...</div>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="curryqueen" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 359). Other element would receive the click: <div class="naan-unfollow-overlay">...</div>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:44,439 | INFO | pages.home_page | Clicked Follow button for Meta: thesaucier
+The Saucier and Sub: The Saucier.
+2026-06-25 10:51:45,503 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="thesaucier" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 422). Other element would receive the click: <div class="naan-unfollow-overlay">...</div>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="thesaucier" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 422). Other element would receive the click: <div class="naan-unfollow-overlay">...</div>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:45,540 | INFO | pages.home_page | Clicked Follow button for Meta: naanstop_eats
+Naan-Stop Eats and Sub: Naan-Stop Eats.
+2026-06-25 10:51:46,606 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="naanstop_eats" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 486). Other element would receive the click: <p class="naan-unfollow-who">...</p>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="naanstop_eats" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 486). Other element would receive the click: <p class="naan-unfollow-who">...</p>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:46,647 | INFO | pages.home_page | Clicked Follow button for Meta: tandoori_tom
+Tandoori Tom and Sub: Tandoori Tom.
+2026-06-25 10:51:47,705 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="tandoori_tom" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 549). Other element would receive the click: <button type="button" class="naan-unfollow-confirm">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="tandoori_tom" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 549). Other element would receive the click: <button type="button" class="naan-unfollow-confirm">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:47,737 | INFO | pages.home_page | Clicked Follow button for Meta: paneer_pete
+Paneer Pete and Sub: Paneer Pete.
+2026-06-25 10:51:48,758 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="paneer_pete" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="paneer_pete" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:48,797 | INFO | pages.home_page | Clicked Follow button for Meta: masala_mara
+Masala Mara and Sub: Masala Mara.
+2026-06-25 10:51:49,854 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="masala_mara" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="masala_mara" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:49,897 | INFO | pages.home_page | Clicked Follow button for Meta: ghee_whiz
+Ghee Whiz and Sub: Ghee Whiz.
+2026-06-25 10:51:50,970 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="ghee_whiz" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="ghee_whiz" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:51,015 | INFO | pages.home_page | Clicked Follow button for Meta: biryani_bex
+Biryani Bex and Sub: Biryani Bex.
+2026-06-25 10:51:52,082 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="biryani_bex" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="biryani_bex" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:52,127 | INFO | pages.home_page | Clicked Follow button for Meta: samosa_sam
+Samosa Sam and Sub: Samosa Sam.
+2026-06-25 10:51:53,180 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="samosa_sam" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="samosa_sam" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:53,273 | INFO | pages.home_page | Clicked Follow button for Meta: chaat_charlie
+Chaat Charlie and Sub: Chaat Charlie.
+2026-06-25 10:51:54,324 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="chaat_charlie" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="chaat_charlie" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:54,355 | INFO | pages.home_page | Clicked Follow button for Meta: roti_rosa
+Roti Rosa and Sub: Roti Rosa.
+2026-06-25 10:51:55,413 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="roti_rosa" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="roti_rosa" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:57,493 | INFO | pages.home_page | Clicked Follow button for Meta: doughboy
+Dough Boy and Sub: Dough Boy.
+2026-06-25 10:51:58,567 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="doughboy" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 295). Other element would receive the click: <div class="naan-unfollow-overlay">...</div>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="doughboy" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 295). Other element would receive the click: <div class="naan-unfollow-overlay">...</div>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:58,614 | INFO | pages.home_page | Clicked Follow button for Meta: curryqueen
+Curry Queen and Sub: Curry Queen.
+2026-06-25 10:51:59,648 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="curryqueen" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 359). Other element would receive the click: <div class="naan-unfollow-overlay">...</div>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="curryqueen" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 359). Other element would receive the click: <div class="naan-unfollow-overlay">...</div>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:51:59,674 | INFO | pages.home_page | Clicked Follow button for Meta: thesaucier
+The Saucier and Sub: The Saucier.
+2026-06-25 10:52:00,738 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="thesaucier" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 422). Other element would receive the click: <div class="naan-unfollow-overlay">...</div>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="thesaucier" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 422). Other element would receive the click: <div class="naan-unfollow-overlay">...</div>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:52:00,783 | INFO | pages.home_page | Clicked Follow button for Meta: naanstop_eats
+Naan-Stop Eats and Sub: Naan-Stop Eats.
+2026-06-25 10:52:01,843 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="naanstop_eats" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 486). Other element would receive the click: <p class="naan-unfollow-who">...</p>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="naanstop_eats" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 486). Other element would receive the click: <p class="naan-unfollow-who">...</p>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:52:01,889 | INFO | pages.home_page | Clicked Follow button for Meta: tandoori_tom
+Tandoori Tom and Sub: Tandoori Tom.
+2026-06-25 10:52:02,964 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="tandoori_tom" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 549). Other element would receive the click: <button type="button" class="naan-unfollow-confirm">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="tandoori_tom" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 549). Other element would receive the click: <button type="button" class="naan-unfollow-confirm">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:52:03,026 | INFO | pages.home_page | Clicked Follow button for Meta: paneer_pete
+Paneer Pete and Sub: Paneer Pete.
+2026-06-25 10:52:04,087 | ERROR | pages.home_page | Failed to click Follow button: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="paneer_pete" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+Traceback (most recent call last):
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/Day 52/pages/home_page.py", line 84, in unfollow_followers
+    button.click()
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 450, in execute
+    self.error_handler.check_response(response)
+  File "/Users/liuyuchen/Downloads/General Coding/Udemy Course/AngelaYu_100DaysPython/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="naan-follow-btn is-following" type="button" data-handle="paneer_pete" data-following="true" data-wired="1">...</button> is not clickable at point (1096, 578). Other element would receive the click: <button type="button" class="naan-unfollow-cancel">...</button>
+  (Session info: chrome=149.0.7827.158); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+0   chromedriver                        0x00000001049f71e4 cxxbridge1$str$ptr + 3175992
+1   chromedriver                        0x00000001049ef2ac cxxbridge1$str$ptr + 3143424
+2   chromedriver                        0x000000010449f374 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001044ed070 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 392796
+4   chromedriver                        0x00000001044eb8dc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 386760
+5   chromedriver                        0x00000001044e998c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 378744
+6   chromedriver                        0x00000001044e8d34 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 375584
+7   chromedriver                        0x00000001044dedcc _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 334776
+8   chromedriver                        0x00000001044de854 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 333376
+9   chromedriver                        0x0000000104526f4c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630072
+10  chromedriver                        0x00000001044dd354 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 328000
+11  chromedriver                        0x00000001049b5370 cxxbridge1$str$ptr + 2906052
+12  chromedriver                        0x00000001049b8af0 cxxbridge1$str$ptr + 2920260
+13  chromedriver                        0x000000010499c2b0 cxxbridge1$str$ptr + 2803460
+14  chromedriver                        0x00000001049b9384 cxxbridge1$str$ptr + 2922456
+15  chromedriver                        0x000000010498d7d0 cxxbridge1$str$ptr + 2743332
+16  chromedriver                        0x00000001049de24c cxxbridge1$str$ptr + 3073696
+17  chromedriver                        0x00000001049de3ac cxxbridge1$str$ptr + 3074048
+18  chromedriver                        0x00000001049eef04 cxxbridge1$str$ptr + 3142488
+19  libsystem_pthread.dylib             0x0000000190533c08 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019052eba8 thread_start + 8
+
+2026-06-25 10:52:04,133 | INFO | pages.home_page | Clicked Follow button for Meta: masala_mara
+Masala Mara and Sub: Masala Mara.
+2026-06-25 10:52:04,809 | INFO | __main__ | Closing browser...
+2026-06-25 10:52:04,820 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=56227): Failed to establish a new connection: [Errno 61] Connection refused")': /session/62998a0539a72b1d8c7ad772dece3e25
+2026-06-25 10:52:04,821 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=56227): Failed to establish a new connection: [Errno 61] Connection refused")': /session/62998a0539a72b1d8c7ad772dece3e25
+2026-06-25 10:52:04,821 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=56227): Failed to establish a new connection: [Errno 61] Connection refused")': /session/62998a0539a72b1d8c7ad772dece3e25
+2026-06-25 10:55:53,004 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 10:55:54,522 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 10:55:54,522 | INFO | root | Navigating to chefsteps...
+2026-06-25 10:55:55,464 | INFO | pages.home_page | Unfollowing user: doughboy
+Dough Boy - Dough Boy
+2026-06-25 10:55:58,390 | INFO | pages.home_page | Unfollowing user: curryqueen
+Curry Queen - Curry Queen
+2026-06-25 10:56:01,755 | INFO | pages.home_page | Unfollowing user: thesaucier
+The Saucier - The Saucier
+2026-06-25 10:56:04,091 | INFO | pages.home_page | Unfollowing user: naanstop_eats
+Naan-Stop Eats - Naan-Stop Eats
+2026-06-25 10:56:06,655 | INFO | pages.home_page | Unfollowing user: tandoori_tom
+Tandoori Tom - Tandoori Tom
+2026-06-25 10:56:10,659 | INFO | pages.home_page | Unfollowing user: paneer_pete
+Paneer Pete - Paneer Pete
+2026-06-25 10:56:13,884 | INFO | pages.home_page | Unfollowing user: masala_mara
+Masala Mara - Masala Mara
+2026-06-25 10:56:16,061 | INFO | pages.home_page | Unfollowing user: ghee_whiz
+Ghee Whiz - Ghee Whiz
+2026-06-25 10:56:18,176 | INFO | pages.home_page | Unfollowing user: biryani_bex
+Biryani Bex - Biryani Bex
+2026-06-25 10:56:20,795 | INFO | pages.home_page | Unfollowing user: samosa_sam
+Samosa Sam - Samosa Sam
+2026-06-25 10:56:23,278 | INFO | pages.home_page | Unfollowing user: chaat_charlie
+Chaat Charlie - Chaat Charlie
+2026-06-25 10:56:25,864 | INFO | pages.home_page | Unfollowing user: roti_rosa
+Roti Rosa - Roti Rosa
+2026-06-25 10:56:30,420 | INFO | pages.home_page | Unfollowing user: doughboy
+Dough Boy - Dough Boy
+2026-06-25 10:56:32,612 | INFO | pages.home_page | Unfollowing user: curryqueen
+Curry Queen - Curry Queen
+2026-06-25 10:56:35,975 | INFO | pages.home_page | Unfollowing user: thesaucier
+The Saucier - The Saucier
+2026-06-25 10:56:39,469 | INFO | pages.home_page | Unfollowing user: naanstop_eats
+Naan-Stop Eats - Naan-Stop Eats
+2026-06-25 10:56:42,495 | INFO | pages.home_page | Unfollowing user: tandoori_tom
+Tandoori Tom - Tandoori Tom
+2026-06-25 10:56:45,183 | INFO | pages.home_page | Unfollowing user: paneer_pete
+Paneer Pete - Paneer Pete
+2026-06-25 10:56:47,950 | INFO | pages.home_page | Unfollowing user: masala_mara
+Masala Mara - Masala Mara
+2026-06-25 10:56:51,881 | INFO | pages.home_page | Unfollowing user: ghee_whiz
+Ghee Whiz - Ghee Whiz
+2026-06-25 10:56:54,597 | INFO | pages.home_page | Unfollowing user: biryani_bex
+Biryani Bex - Biryani Bex
+2026-06-25 10:56:57,892 | INFO | pages.home_page | Unfollowing user: samosa_sam
+Samosa Sam - Samosa Sam
+2026-06-25 10:57:01,496 | INFO | pages.home_page | Unfollowing user: chaat_charlie
+Chaat Charlie - Chaat Charlie
+2026-06-25 10:57:04,931 | INFO | pages.home_page | Unfollowing user: roti_rosa
+Roti Rosa - Roti Rosa
+2026-06-25 10:57:07,968 | INFO | pages.home_page | Unfollowing user: daal_dani
+Daal Dani - Daal Dani
+2026-06-25 10:57:12,005 | INFO | pages.home_page | Unfollowing user: kebab_kim
+Kebab Kim - Kebab Kim
+2026-06-25 10:57:14,198 | INFO | pages.home_page | Unfollowing user: lassi_lou
+Lassi Lou - Lassi Lou
+2026-06-25 10:57:16,716 | INFO | pages.home_page | Unfollowing user: pakora_priya
+Pakora Priya - Pakora Priya
+2026-06-25 10:57:19,106 | INFO | pages.home_page | Unfollowing user: tikka_theo
+Tikka Theo - Tikka Theo
+2026-06-25 10:57:21,426 | INFO | pages.home_page | Unfollowing user: korma_kit
+Korma Kit - Korma Kit
+2026-06-25 10:57:24,016 | INFO | pages.home_page | Unfollowing user: vindaloo_vee
+Vindaloo Vee - Vindaloo Vee
+2026-06-25 10:57:26,432 | INFO | pages.home_page | Unfollowing user: jalebi_jo
+Jalebi Jo - Jalebi Jo
+2026-06-25 10:57:30,148 | INFO | pages.home_page | Unfollowing user: gulab_gina
+Gulab Gina - Gulab Gina
+2026-06-25 10:57:33,441 | INFO | pages.home_page | Unfollowing user: chutney_cho
+Chutney Cho - Chutney Cho
+2026-06-25 10:57:37,545 | INFO | pages.home_page | Unfollowing user: saag_sage
+Saag Sage - Saag Sage
+2026-06-25 10:57:42,771 | INFO | pages.home_page | Reached the end of the followers list.
+2026-06-25 10:57:42,771 | INFO | root | Navigating to rordongamsay...
+2026-06-25 10:57:43,378 | INFO | pages.home_page | Unfollowing user: paneer_pete
+Paneer Pete - Paneer Pete
+2026-06-25 10:57:45,883 | INFO | pages.home_page | Unfollowing user: masala_mara
+Masala Mara - Masala Mara
+2026-06-25 10:57:49,727 | INFO | pages.home_page | Unfollowing user: ghee_whiz
+Ghee Whiz - Ghee Whiz
+2026-06-25 10:57:52,001 | INFO | pages.home_page | Unfollowing user: biryani_bex
+Biryani Bex - Biryani Bex
+2026-06-25 10:57:55,744 | INFO | pages.home_page | Unfollowing user: samosa_sam
+Samosa Sam - Samosa Sam
+2026-06-25 10:57:59,241 | INFO | pages.home_page | Unfollowing user: chaat_charlie
+Chaat Charlie - Chaat Charlie
+2026-06-25 10:58:02,824 | INFO | pages.home_page | Unfollowing user: roti_rosa
+Roti Rosa - Roti Rosa
+2026-06-25 10:58:05,778 | INFO | pages.home_page | Unfollowing user: daal_dani
+Daal Dani - Daal Dani
+2026-06-25 10:58:08,527 | INFO | pages.home_page | Unfollowing user: kebab_kim
+Kebab Kim - Kebab Kim
+2026-06-25 10:58:11,555 | INFO | pages.home_page | Unfollowing user: lassi_lou
+Lassi Lou - Lassi Lou
+2026-06-25 10:58:14,799 | INFO | pages.home_page | Unfollowing user: pakora_priya
+Pakora Priya - Pakora Priya
+2026-06-25 10:58:17,838 | INFO | pages.home_page | Unfollowing user: tikka_theo
+Tikka Theo - Tikka Theo
+2026-06-25 10:58:23,269 | INFO | pages.home_page | Unfollowing user: paneer_pete
+Paneer Pete - Paneer Pete
+2026-06-25 10:58:26,019 | INFO | pages.home_page | Unfollowing user: masala_mara
+Masala Mara - Masala Mara
+2026-06-25 10:58:28,781 | INFO | pages.home_page | Unfollowing user: ghee_whiz
+Ghee Whiz - Ghee Whiz
+2026-06-25 10:58:32,411 | INFO | pages.home_page | Unfollowing user: biryani_bex
+Biryani Bex - Biryani Bex
+2026-06-25 10:58:35,414 | INFO | pages.home_page | Unfollowing user: samosa_sam
+Samosa Sam - Samosa Sam
+2026-06-25 10:58:39,352 | INFO | pages.home_page | Unfollowing user: chaat_charlie
+Chaat Charlie - Chaat Charlie
+2026-06-25 10:58:42,102 | INFO | pages.home_page | Unfollowing user: roti_rosa
+Roti Rosa - Roti Rosa
+2026-06-25 10:58:45,380 | INFO | pages.home_page | Unfollowing user: daal_dani
+Daal Dani - Daal Dani
+2026-06-25 10:58:47,603 | INFO | pages.home_page | Unfollowing user: kebab_kim
+Kebab Kim - Kebab Kim
+2026-06-25 10:58:50,658 | INFO | pages.home_page | Unfollowing user: lassi_lou
+Lassi Lou - Lassi Lou
+2026-06-25 10:58:54,651 | INFO | pages.home_page | Unfollowing user: pakora_priya
+Pakora Priya - Pakora Priya
+2026-06-25 10:58:58,671 | INFO | pages.home_page | Unfollowing user: tikka_theo
+Tikka Theo - Tikka Theo
+2026-06-25 10:59:02,587 | INFO | pages.home_page | Unfollowing user: korma_kit
+Korma Kit - Korma Kit
+2026-06-25 10:59:04,739 | INFO | pages.home_page | Unfollowing user: vindaloo_vee
+Vindaloo Vee - Vindaloo Vee
+2026-06-25 10:59:08,502 | INFO | pages.home_page | Unfollowing user: jalebi_jo
+Jalebi Jo - Jalebi Jo
+2026-06-25 10:59:12,511 | INFO | pages.home_page | Unfollowing user: gulab_gina
+Gulab Gina - Gulab Gina
+2026-06-25 10:59:16,203 | INFO | pages.home_page | Unfollowing user: chutney_cho
+Chutney Cho - Chutney Cho
+2026-06-25 10:59:19,822 | INFO | pages.home_page | Unfollowing user: saag_sage
+Saag Sage - Saag Sage
+2026-06-25 10:59:23,237 | INFO | pages.home_page | Unfollowing user: aloo_andy
+Aloo Andy - Aloo Andy
+2026-06-25 10:59:25,846 | INFO | pages.home_page | Unfollowing user: dosa_dee
+Dosa Dee - Dosa Dee
+2026-06-25 10:59:28,355 | INFO | pages.home_page | Unfollowing user: idli_ivy
+Idli Ivy - Idli Ivy
+2026-06-25 10:59:30,524 | INFO | pages.home_page | Unfollowing user: paratha_pat
+Paratha Pat - Paratha Pat
+2026-06-25 10:59:34,363 | INFO | pages.home_page | Unfollowing user: halwa_hana
+Halwa Hana - Halwa Hana
+2026-06-25 10:59:40,124 | INFO | pages.home_page | Reached the end of the followers list.
+2026-06-25 10:59:40,125 | INFO | root | Navigating to elaineducasse...
+2026-06-25 10:59:40,552 | INFO | pages.home_page | Unfollowing user: doughboy
+Dough Boy - Dough Boy
+2026-06-25 10:59:43,304 | INFO | pages.home_page | Unfollowing user: curryqueen
+Curry Queen - Curry Queen
+2026-06-25 10:59:47,078 | INFO | pages.home_page | Unfollowing user: thesaucier
+The Saucier - The Saucier
+2026-06-25 10:59:50,174 | INFO | pages.home_page | Unfollowing user: naanstop_eats
+Naan-Stop Eats - Naan-Stop Eats
+2026-06-25 10:59:54,222 | INFO | pages.home_page | Unfollowing user: tandoori_tom
+Tandoori Tom - Tandoori Tom
+2026-06-25 10:59:56,394 | INFO | pages.home_page | Unfollowing user: paneer_pete
+Paneer Pete - Paneer Pete
+2026-06-25 10:59:58,792 | INFO | pages.home_page | Unfollowing user: masala_mara
+Masala Mara - Masala Mara
+2026-06-25 11:00:01,951 | INFO | pages.home_page | Unfollowing user: ghee_whiz
+Ghee Whiz - Ghee Whiz
+2026-06-25 11:00:04,439 | INFO | pages.home_page | Unfollowing user: biryani_bex
+Biryani Bex - Biryani Bex
+2026-06-25 11:00:07,548 | INFO | pages.home_page | Unfollowing user: samosa_sam
+Samosa Sam - Samosa Sam
+2026-06-25 11:00:10,326 | INFO | pages.home_page | Unfollowing user: gulab_gina
+Gulab Gina - Gulab Gina
+2026-06-25 11:00:15,864 | INFO | pages.home_page | Unfollowing user: doughboy
+Dough Boy - Dough Boy
+2026-06-25 11:00:19,743 | INFO | pages.home_page | Unfollowing user: curryqueen
+Curry Queen - Curry Queen
+2026-06-25 11:00:23,068 | INFO | pages.home_page | Unfollowing user: thesaucier
+The Saucier - The Saucier
+2026-06-25 11:00:26,538 | INFO | pages.home_page | Unfollowing user: naanstop_eats
+Naan-Stop Eats - Naan-Stop Eats
+2026-06-25 11:00:29,066 | INFO | pages.home_page | Unfollowing user: tandoori_tom
+Tandoori Tom - Tandoori Tom
+2026-06-25 11:00:31,799 | INFO | pages.home_page | Unfollowing user: paneer_pete
+Paneer Pete - Paneer Pete
+2026-06-25 11:00:34,900 | INFO | pages.home_page | Unfollowing user: masala_mara
+Masala Mara - Masala Mara
+2026-06-25 11:00:37,278 | INFO | pages.home_page | Unfollowing user: ghee_whiz
+Ghee Whiz - Ghee Whiz
+2026-06-25 11:00:40,417 | INFO | pages.home_page | Unfollowing user: biryani_bex
+Biryani Bex - Biryani Bex
+2026-06-25 11:00:44,498 | INFO | pages.home_page | Unfollowing user: samosa_sam
+Samosa Sam - Samosa Sam
+2026-06-25 11:00:47,139 | INFO | pages.home_page | Unfollowing user: gulab_gina
+Gulab Gina - Gulab Gina
+2026-06-25 11:00:50,341 | INFO | pages.home_page | Unfollowing user: chutney_cho
+Chutney Cho - Chutney Cho
+2026-06-25 11:00:52,465 | INFO | pages.home_page | Unfollowing user: saag_sage
+Saag Sage - Saag Sage
+2026-06-25 11:00:56,254 | INFO | pages.home_page | Unfollowing user: aloo_andy
+Aloo Andy - Aloo Andy
+2026-06-25 11:00:59,499 | INFO | pages.home_page | Unfollowing user: dosa_dee
+Dosa Dee - Dosa Dee
+2026-06-25 11:01:02,739 | INFO | pages.home_page | Unfollowing user: idli_ivy
+Idli Ivy - Idli Ivy
+2026-06-25 11:01:06,506 | INFO | pages.home_page | Unfollowing user: paratha_pat
+Paratha Pat - Paratha Pat
+2026-06-25 11:01:09,132 | INFO | pages.home_page | Unfollowing user: halwa_hana
+Halwa Hana - Halwa Hana
+2026-06-25 11:01:13,255 | INFO | pages.home_page | Reached the end of the followers list.
+2026-06-25 11:03:42,701 | INFO | __main__ | Closing browser...
+2026-06-25 11:03:42,717 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=56277): Failed to establish a new connection: [Errno 61] Connection refused")': /session/0816472cee32d129e5e6e189919d775a
+2026-06-25 11:03:42,718 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=56277): Failed to establish a new connection: [Errno 61] Connection refused")': /session/0816472cee32d129e5e6e189919d775a
+2026-06-25 11:03:42,719 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=56277): Failed to establish a new connection: [Errno 61] Connection refused")': /session/0816472cee32d129e5e6e189919d775a
+2026-06-25 11:03:45,481 | INFO | pages.login_page | Navigating to login page...
+2026-06-25 11:03:46,964 | INFO | pages.login_page | Successfully Logged In
+2026-06-25 11:03:46,964 | INFO | root | Navigating to chefsteps...
+2026-06-25 11:03:47,861 | INFO | pages.home_page | Unfollowing user: doughboy
+Dough Boy - Dough Boy
+2026-06-25 11:03:50,094 | INFO | pages.home_page | Unfollowing user: curryqueen
+Curry Queen - Curry Queen
+2026-06-25 11:03:52,357 | INFO | pages.home_page | Unfollowing user: thesaucier
+The Saucier - The Saucier
+2026-06-25 11:03:55,111 | INFO | pages.home_page | Unfollowing user: naanstop_eats
+Naan-Stop Eats - Naan-Stop Eats
+2026-06-25 11:03:58,796 | INFO | pages.home_page | Unfollowing user: tandoori_tom
+Tandoori Tom - Tandoori Tom
+2026-06-25 11:04:01,098 | INFO | pages.home_page | Unfollowing user: paneer_pete
+Paneer Pete - Paneer Pete
+2026-06-25 11:04:03,781 | INFO | pages.home_page | Unfollowing user: masala_mara
+Masala Mara - Masala Mara
+2026-06-25 11:04:06,539 | INFO | pages.home_page | Unfollowing user: ghee_whiz
+Ghee Whiz - Ghee Whiz
+2026-06-25 11:04:10,385 | INFO | pages.home_page | Unfollowing user: biryani_bex
+Biryani Bex - Biryani Bex
+2026-06-25 11:04:13,342 | INFO | pages.home_page | Unfollowing user: samosa_sam
+Samosa Sam - Samosa Sam
+2026-06-25 11:04:16,348 | INFO | pages.home_page | Unfollowing user: chaat_charlie
+Chaat Charlie - Chaat Charlie
+2026-06-25 11:04:19,211 | INFO | pages.home_page | Unfollowing user: roti_rosa
+Roti Rosa - Roti Rosa
+2026-06-25 11:04:24,527 | INFO | pages.home_page | Unfollowing user: daal_dani
+Daal Dani - Daal Dani
+2026-06-25 11:04:27,552 | INFO | pages.home_page | Unfollowing user: kebab_kim
+Kebab Kim - Kebab Kim
+2026-06-25 11:04:31,198 | INFO | pages.home_page | Unfollowing user: lassi_lou
+Lassi Lou - Lassi Lou
+2026-06-25 11:04:34,636 | INFO | pages.home_page | Unfollowing user: pakora_priya
+Pakora Priya - Pakora Priya
+2026-06-25 11:04:38,098 | INFO | pages.home_page | Unfollowing user: tikka_theo
+Tikka Theo - Tikka Theo
+2026-06-25 11:04:40,604 | INFO | pages.home_page | Unfollowing user: korma_kit
+Korma Kit - Korma Kit
+2026-06-25 11:04:43,318 | INFO | pages.home_page | Unfollowing user: vindaloo_vee
+Vindaloo Vee - Vindaloo Vee
+2026-06-25 11:04:46,739 | INFO | pages.home_page | Unfollowing user: jalebi_jo
+Jalebi Jo - Jalebi Jo
+2026-06-25 11:04:50,721 | INFO | pages.home_page | Unfollowing user: gulab_gina
+Gulab Gina - Gulab Gina
+2026-06-25 11:04:53,786 | INFO | pages.home_page | Unfollowing user: kulfi_carl
+Kulfi Carl - Kulfi Carl
+2026-06-25 11:04:56,694 | INFO | pages.home_page | Unfollowing user: raita_remy
+Raita Remy - Raita Remy
+2026-06-25 11:04:59,521 | INFO | pages.home_page | Unfollowing user: chutney_cho
+Chutney Cho - Chutney Cho
+2026-06-25 11:05:02,658 | INFO | pages.home_page | Unfollowing user: saag_sage
+Saag Sage - Saag Sage
+2026-06-25 11:05:07,420 | INFO | pages.home_page | Reached the end of the followers list.
+2026-06-25 11:05:07,421 | INFO | root | Navigating to rordongamsay...
+2026-06-25 11:05:10,382 | INFO | pages.home_page | Unfollowing user: aloo_andy
+Aloo Andy - Aloo Andy
+2026-06-25 11:05:13,086 | INFO | pages.home_page | Unfollowing user: dosa_dee
+Dosa Dee - Dosa Dee
+2026-06-25 11:05:15,696 | INFO | pages.home_page | Unfollowing user: idli_ivy
+Idli Ivy - Idli Ivy
+2026-06-25 11:05:17,864 | INFO | pages.home_page | Unfollowing user: paratha_pat
+Paratha Pat - Paratha Pat
+2026-06-25 11:05:22,875 | INFO | pages.home_page | Unfollowing user: halwa_hana
+Halwa Hana - Halwa Hana
+2026-06-25 11:05:28,337 | INFO | pages.home_page | Reached the end of the followers list.
+2026-06-25 11:05:28,338 | INFO | root | Navigating to elaineducasse...
+2026-06-25 11:05:33,343 | INFO | pages.home_page | Reached the end of the followers list.
+2026-06-25 11:05:51,683 | INFO | __main__ | Closing browser...
