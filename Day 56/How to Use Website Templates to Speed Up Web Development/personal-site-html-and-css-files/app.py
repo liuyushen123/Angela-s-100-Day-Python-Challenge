@@ -3,13 +3,8 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route("/Angela")
-def angela_site():
-    return render_template("Angela's Personal Site.html")
-
-
 @app.route("/")
-def my_site():
+def main_page():
     return render_template("index.html")
 
 
