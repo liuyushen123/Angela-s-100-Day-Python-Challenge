@@ -35,7 +35,11 @@ Thumbs.db
 .ipynb_checkpoints/
 
 # =========================
-# Course Specific / App Data
+# Selenium / Browser Profiles
 # =========================
-**/selenium_profile/
 chrome_profile/
+selenium_profile/
+user_data/
+**/chrome_profile/
+**/selenium_profile/
+**/user_data/

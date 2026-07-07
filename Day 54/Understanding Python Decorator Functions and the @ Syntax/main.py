@@ -23,6 +23,4 @@ def say_greeting():
     print("How are you?")
 
 
-original_say_hello = say_hello
 say_hello()
-original_say_hello()

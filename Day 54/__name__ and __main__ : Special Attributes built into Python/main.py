@@ -15,7 +15,4 @@ def home():
 
 if __name__ == "__main__":
     print("This code block only runs if this script is executed directly!")
-    # Call your main function here, for example:
-    # main()
-
     app.run(host="0.0.0.0", port=5001, debug=True)

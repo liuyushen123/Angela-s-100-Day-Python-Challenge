@@ -6,17 +6,10 @@ random_number = random.randint(0, 9)
 app = Flask(__name__)
 
 
-def make_h1(function):
-    def wrapper():
-        return f"<h1>{function()}<h1>"
-
-    return wrapper
-
-
 @app.route("/")
 def home_page():
     return (
-        "<h1>Guess a number between 0 and 9<h1>"
+        "<h1>Guess a number between 0 and 9</h1>"
         "<br><br>"
         "<img src='https://media.giphy.com/media/3o7aCSPqXE5C6T8tBC/giphy.gif'>"
     )

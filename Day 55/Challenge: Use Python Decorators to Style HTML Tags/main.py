@@ -19,7 +19,6 @@ def make_emphasis(function):
 
 def make_underlined(function):
     def wrapper():
-        function.__name__
         return "<u>" + function() + "</u>"
 
     return wrapper
