@@ -14,9 +14,7 @@ def main():
 def blog_page():
     with open("data/blog.json") as file:
         posts = json.load(file)
-        print(posts)
-
-        return render_template("blog_posts.html", posts=posts)
+    return render_template("blog_posts.html", posts=posts)
 
 
 if __name__ == "__main__":
