@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="..//static/blog.css" />
+  </head>
+  <body>
+    <main class="container">
+      {% for blog_post in posts %}
+      <article class="post">
+        <h1>{{ blog_post["title"] }}</h1>
+        <h2>{{ blog_post["subtitle"] }}</h2>
+        <p>{{ blog_post["body"] }}</p>
+      </article>
+      {% endfor %}
+    </main>
+  </body>
+</html>

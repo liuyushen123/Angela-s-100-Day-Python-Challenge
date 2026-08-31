@@ -3,29 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="../static/home.css" />
-  </head>
-  <body>
-    <div class="card">
-      <h1>Welcome!</h1>
-      <p>Please enter your name to continue.</p>
 
-      <form action="/predict" method="GET">
-        <div class="input-group">
-          <label for="name">Your Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="e.g., Jane Doe"
-            required
-            autocomplete="off"
-          />
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <title>My Blog</title>
+
+    <link rel="stylesheet" href="..//static/home.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="welcome-card">
+        <h1>Welcome to My Blog</h1>
+
+        <p>
+          Thanks for stopping by! Here you'll find my thoughts, experiences, and
+          things I've learned along the way.
+        </p>
+
+        <a class="blog-button" href="/blog"> Visit My Blog </a>
+      </div>
+    </main>
   </body>
 </html>
+```

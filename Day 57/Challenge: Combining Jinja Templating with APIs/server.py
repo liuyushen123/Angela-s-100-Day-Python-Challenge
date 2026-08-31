@@ -1,5 +1,6 @@
-import requests
-from flask import Flask, render_template, request
+import json
+
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -9,24 +10,13 @@ def main():
     return render_template("home.html")
 
 
-@app.route("/predict")
-def greeting():
-    username = request.args.get("name")
+@app.route("/blog")
+def blog_page():
+    with open("data/blog.json") as file:
+        posts = json.load(file)
+        print(posts)
 
-    age_response = requests.get("https://api.agify.io", params={"name": username})
-    age = age_response.json().get("age")
-
-    gender_response = requests.get(
-        "https://api.genderize.io", params={"name": username}
-    )
-    gender_data = gender_response.json().get("gender")
-
-    return render_template(
-        "prediction.html",
-        username=username,
-        age=age,
-        gender=gender_data,
-    )
+        return render_template("blog_posts.html", posts=posts)
 
 
 if __name__ == "__main__":
