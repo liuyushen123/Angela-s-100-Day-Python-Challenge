@@ -1,0 +1,8 @@
+{
+  "id": "sample_post",
+  "title": "Sample Post",
+  "subtitle": "This is a sample post",
+  "body": "This is the content of the sample post.",
+  "author": "Yuchen Liu",
+  "date": "September 12, 2026"
+}
