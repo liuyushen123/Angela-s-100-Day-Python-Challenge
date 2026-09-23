@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+<!--Don't forget your import here-->
+{% block title %}Add A New Cafe{% endblock %} {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+      <h1>Add a new cafe into the database</h1>
+
+      <!-- This is where your WTForm will go -->
+      <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3">
+          {{ form.cafe.label(class="form-label") }} {{
+          form.cafe(class="form-control") }}
+        </div>
+
+        <div class="mb-3">
+          {{ form.location.label(class="form-label") }} {{
+          form.location(class="form-control") }}
+        </div>
+
+        <div class="mb-3">
+          {{ form.open.label(class="form-label") }} {{
+          form.open(class="form-control") }}
+        </div>
+
+        <div class="mb-3">
+          {{ form.close.label(class="form-label") }} {{
+          form.close(class="form-control") }}
+        </div>
+
+        <div class="mb-3">
+          {{ form.coffee_rating.label(class="form-label") }} {{
+          form.coffee_rating(class="form-select") }}
+        </div>
+
+        <div class="mb-3">
+          {{ form.wifi_rating.label(class="form-label") }} {{
+          form.wifi_rating(class="form-select") }}
+        </div>
+
+        <div class="mb-3">
+          {{ form.power_rating.label(class="form-label") }} {{
+          form.power_rating(class="form-select") }}
+        </div>
+
+        {{ form.submit(class="btn btn-primary") }}
+      </form>
+
+      <p class="space-above"><a href="/cafes">See all cafes</a></p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
