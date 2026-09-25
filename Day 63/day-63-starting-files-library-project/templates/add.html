@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Add a Book</title>
 
     <link
@@ -12,28 +13,46 @@
 
   <body>
     <div class="container mt-5">
-      <h1>Add a Book</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="card shadow-sm">
+            <div class="card-body p-4">
+              <h1 class="card-title mb-4">Add a Book</h1>
 
-      <form method="POST">
-        {{ form.hidden_tag() }}
+              <!-- prettier-ignore -->
+              <form method="POST">
+                {{ form.hidden_tag() }}
 
-        <div class="mb-3">
-          {{ form.book_name.label(class="form-label") }} {{
-          form.book_name(class="form-control") }}
+                <div class="mb-3">
+                  {{ form.book_name.label(class="form-label") }}
+                  {{ form.book_name(class="form-control", placeholder="Enter a book name") }}
+                  {% for error in form.book_name.errors %}
+                    <div class="text-danger mt-1">{{ error }}</div>
+                  {% endfor %}
+                </div>
+
+                <div class="mb-3">
+                  {{ form.author_name.label(class="form-label") }}
+                  {{ form.author_name(class="form-control", placeholder="Enter author name") }}
+                  {% for error in form.author_name.errors %}
+                    <div class="text-danger mt-1">{{ error }}</div>
+                  {% endfor %}
+                </div>
+
+                <div class="mb-4">
+                  {{ form.rating.label(class="form-label") }}
+                  {{ form.rating(class="form-control", placeholder="Enter rating from 1 to 10") }}
+                  {% for error in form.rating.errors %}
+                    <div class="text-danger mt-1">{{ error }}</div>
+                  {% endfor %}
+                </div>
+
+                {{ form.submit(class="btn btn-primary w-100") }}
+              </form>
+            </div>
+          </div>
         </div>
-
-        <div class="mb-3">
-          {{ form.author_name.label(class="form-label") }} {{
-          form.author_name(class="form-control") }}
-        </div>
-
-        <div class="mb-3">
-          {{ form.rating.label(class="form-label") }} {{
-          form.rating(class="form-control") }}
-        </div>
-
-        {{ form.submit(class="btn btn-primary") }}
-      </form>
+      </div>
     </div>
   </body>
 </html>

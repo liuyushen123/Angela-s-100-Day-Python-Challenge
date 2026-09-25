@@ -26,16 +26,16 @@
                 {{ book.rating }}/10
               </div>
 
+              <!-- prettier-ignore -->
               <form method="POST">
                 {{ form.hidden_tag() }}
 
                 <div class="mb-3">
-                  {{ form.new_rating.label(class="form-label") }} {{
-                  form.new_rating( class="form-control", placeholder="Enter a
-                  rating from 1 to 10" ) }} {% if form.new_rating.errors %} {%
-                  for error in form.new_rating.errors %}
-                  <div class="text-danger mt-1">{{ error }}</div>
-                  {% endfor %} {% endif %}
+                  {{ form.new_rating.label(class="form-label") }}
+                  {{ form.new_rating(class="form-control", placeholder="Enter a rating from 1 to 10") }}
+                  {% for error in form.new_rating.errors %}
+                    <div class="text-danger mt-1">{{ error }}</div>
+                  {% endfor %}
                 </div>
 
                 {{ form.submit(class="btn btn-primary w-100") }}
