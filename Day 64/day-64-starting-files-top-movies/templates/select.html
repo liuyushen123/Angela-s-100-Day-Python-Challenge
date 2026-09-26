@@ -1,13 +1,48 @@
-{% extends 'base.html' %}
-
-{% block title %}Select Movie{% endblock %}
-
-{% block content %}
-<div class="container">
+{% extends 'base.html' %} {% block title %}Select Movie{% endblock %} {% block
+content %}
+<div class="container add">
+  <div class="text-center mb-4">
     <h1 class="heading">Select Movie</h1>
-  <p>
-    <a href="#"> MOVIE TITLE - MOVIE RELEASE DATE</a>
-  </p>
+    <p class="text-muted">
+      Choose the correct match from the search results below.
+    </p>
+  </div>
 
+  <div class="row justify-content-center g-4">
+    {% for movie in movies %}
+    <div class="col-md-6 col-lg-4">
+      <div class="form-card h-100 d-flex flex-column overflow-hidden">
+        <img
+          src="{{ movie.poster_path }}"
+          alt="{{ movie.title }} poster"
+          class="poster-thumb"
+        />
+        <div class="p-3 d-flex flex-column flex-grow-1">
+          <h5 class="mb-1">
+            {{ movie.title }} <span class="text-muted">({{ movie.year }})</span>
+          </h5>
+          <p class="overview text-muted small flex-grow-1">
+            {{ movie.overview }}
+          </p>
+          <form action="{{ url_for('add_movie') }}" method="POST">
+            <input type="hidden" name="title" value="{{ movie.title }}" />
+            <input type="hidden" name="year" value="{{ movie.year }}" />
+            <input type="hidden" name="overview" value="{{ movie.overview }}" />
+            <input type="hidden" name="review" value="{{ review }}" />
+            <input
+              type="hidden"
+              name="img_url"
+              value="{{ movie.poster_path }}"
+            />
+            <input type="hidden" name="rating" value="{{ rating }}" />
+            <button type="submit" class="btn btn-primary w-100 rounded-pill">
+              Select
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}

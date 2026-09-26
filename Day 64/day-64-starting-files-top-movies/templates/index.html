@@ -1,37 +1,98 @@
-{% extends 'base.html' %}
-
-{% block title %}My Top 10 Movies{% endblock %}
-
-{% block content %}
+{% extends 'base.html' %} {% block title %}My Top 10 Movies{% endblock %} {%
+block content %}
 <div class="container">
-  <h1 class="heading">My Top 10 Movies</h1>
-  <p class="description">These are my all-time favourite movies.</p>
-   
-  <div class="card" >
-    <div class="front" style="background-image: url('https://www.shortlist.com/media/images/2019/05/the-30-coolest-alternative-movie-posters-ever-2-1556670563-K61a-column-width-inline.jpg');">
-        <p class="large">1</p>
+  <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+    <div>
+      <h1 class="heading">My Top 10 Movies</h1>
+      <p class="description">These are my all-time favourite movies.</p>
+    </div>
+
+    <div class="dropdown">
+      <button
+        class="button dropdown-toggle"
+        type="button"
+        id="sortDropdown"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Sort By
+      </button>
+      <ul
+        class="dropdown-menu dropdown-menu-end"
+        aria-labelledby="sortDropdown"
+      >
+        <li>
+          <a
+            class="dropdown-item"
+            href="{{ url_for('home', sort='rating', order='desc') }}"
+            >Rating (High → Low)</a
+          >
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="{{ url_for('home', sort='rating', order='asc') }}"
+            >Rating (Low → High)</a
+          >
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="{{ url_for('home', sort='year', order='desc') }}"
+            >Year (Newest first)</a
+          >
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="{{ url_for('home', sort='year', order='asc') }}"
+            >Year (Oldest first)</a
+          >
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="{{ url_for('home', sort='title', order='asc') }}"
+            >Title (A → Z)</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  {% for movie in movies %}
+  <div class="card">
+    <div class="front" style="background-image: url('{{movie.img_url}}')">
+      <p class="large">{{loop.index}}</p>
     </div>
     <div class="back">
       <div>
-    <div class="title">Drive <span class="release_date">(2011)</span></div>
+        <div class="title">
+          {{movie.title}} <span class="release_date">({{movie.year}})</span>
+        </div>
         <div class="rating">
-            <label>7.5</label>
+          <label>{{movie.rating}}</label>
           <i class="fas fa-star star"></i>
         </div>
-          <p class="review">"Loved it!"</p>
-        <p class="overview">
-            A mysterious Hollywood stuntman and mechanic moonlights as a getaway driver and finds himself in trouble when he helps out his neighbor in this action drama.
-        </p>
+        <p class="review">"{{movie.review}}"</p>
+        <p class="overview">{{movie.description}}</p>
 
         <a href="#" class="button">Update</a>
-        <a href="#" class="button delete-button">Delete</a>
-
+        <form
+          action="{{ url_for('delete') }}"
+          method="POST"
+          style="display: inline"
+        >
+          <input type="hidden" name="movie_id" value="{{ movie.id }}" />
+          <button type="submit" class="button delete-button">Delete</button>
+        </form>
       </div>
     </div>
   </div>
+  {% endfor %}
 </div>
 <div class="container text-center add">
-<a href="#" class="button">Add Movie</a>
+  <a href="{{ url_for('add') }}" class="button">Add Movie</a>
 </div>
 
 {% endblock %}
