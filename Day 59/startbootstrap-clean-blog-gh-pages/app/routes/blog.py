@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template
-from app.utils import load_json
+from utils import load_json
 from app.routes.main import all_posts
 
 blog_bp = Blueprint("blog", __name__)

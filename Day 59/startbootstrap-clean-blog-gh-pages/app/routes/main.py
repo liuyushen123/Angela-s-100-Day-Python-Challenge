@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template
-from app.utils import load_json
+from utils import load_json
 
 main_bp = Blueprint("main", __name__)
 
