@@ -50,7 +50,6 @@ class Cafe(db.Model):
 
         db.session.add(cafe)
         db.session.commit()
-
         return
 
     @classmethod

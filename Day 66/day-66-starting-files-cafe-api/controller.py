@@ -95,6 +95,6 @@ def update_attribute():
 # HTTP DELETE - Delete Record
 @routes_bp.route("/delete-cafe")
 def delete():
-    message = Cafe.delete_cafe(request.args.get("id"))
 
+    message = Cafe.delete_cafe(request.args.get("id"))
     return jsonify({"Message": message})
