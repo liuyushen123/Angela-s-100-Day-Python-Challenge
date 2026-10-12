@@ -1,5 +1,6 @@
 from data_manager import DataManager
 from dotenv import load_dotenv
+from pprint import pprint
 from flight_searcher import FlightSearchManager
 
 load_dotenv()
@@ -7,13 +8,22 @@ load_dotenv()
 my_flight = DataManager()
 my_flight_searcher = FlightSearchManager()
 my_data = my_flight.get_data()
-print(f"\n\n\n{my_data}\n\n\n")
+
+
+pprint(my_data)
 for row in my_data:
-    row["iataCode"] = my_flight_searcher.get_destination_code(row["airportName"])
-    row["lowestPrice"], departure_date = my_flight_searcher.get_lowest_price(
-        row["iataCode"]
+    code = my_flight_searcher.get_destination_code(row["airportName"])
+    row["iataCode"] = code
+
+    if code is None:
+        row["lowestPrice"] = None
+        row["departure_date"] = None
+        continue
+
+    row["lowestPrice"], row["departure_date"] = my_flight_searcher.get_lowest_price(
+        code
     )
-    row["departure_date"] = departure_date
+
+
 my_flight.flight_data = my_data
-print(my_flight.flight_data)
 my_flight.update_data()

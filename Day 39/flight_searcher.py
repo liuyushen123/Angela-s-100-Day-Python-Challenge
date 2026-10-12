@@ -4,6 +4,7 @@ import os
 import pandas
 import requests
 from dotenv import load_dotenv
+from utils.get_env import get_required_env_var
 
 load_dotenv()
 
@@ -16,15 +17,20 @@ class FlightSearchManager:
         self.sugested_departure_time = (
             dt.datetime.now() + dt.timedelta(days=92)
         ).strftime("%Y-%m-%d")
-        self.serp_api_key = os.getenv("serp_api_key")
+        self.serp_api_key = get_required_env_var("serp_api_key")
 
-    def get_destination_code(self, airport_code):
-        return self.airport_info[self.airport_info["airport"] == airport_code][
-            "iata"
-        ].values[0]
+    def get_destination_code(self, airport_name):
+        matches = self.airport_info.loc[
+            self.airport_info["airport"] == airport_name, "iata"
+        ]
+
+        if matches.empty:
+            print(f"No IATA code found for airport: {airport_name}")
+            return None
+
+        return matches.iloc[0]
 
     def get_lowest_price(self, airport_code):
-        print(f"\n\n\n{self.sugested_departure_time}\n\n\n")
         params = {
             "engine": "google_flights",
             "departure_id": self.departure_id,
@@ -35,19 +41,27 @@ class FlightSearchManager:
             "api_key": self.serp_api_key,
         }
 
+        print(
+            f"Searching flights for route {self.departure_id}/{airport_code} on {self.sugested_departure_time}"
+        )
+
         response = requests.get(self.serpi_url, params=params, timeout=10)
-
-        print(f"\n\n\n{response.text}\n\n\n")
+        response.raise_for_status()
         data = response.json()
-        cheapest = float("inf")
 
-        if "best_flights" not in data:
+        flights = data.get("best_flights", []) + data.get("other_flights", [])
+        prices = [f["price"] for f in flights if "price" in f]
+
+        if not prices:
             print(
-                f"No flights found for route {self.departure_id}/{airport_code} date: {self.sugested_departure_time}"
+                f"No flights found for route {self.departure_id}/{airport_code} "
+                f"date: {self.sugested_departure_time}"
             )
-            return -1
+            return None, self.sugested_departure_time
 
-        for flight in data["best_flights"]:
-            if flight["price"] < cheapest:
-                cheapest = flight["price"]
-        return cheapest, self.sugested_departure_time
+        return min(prices), self.sugested_departure_time
+
+
+if __name__ == "__main__":
+    fsm = FlightSearchManager()
+    print(fsm.get_lowest_price("SFO"))
