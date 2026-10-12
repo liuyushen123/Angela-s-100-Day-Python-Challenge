@@ -22,5 +22,5 @@ class LoginPage(BasePage):
             logger.info("Successfully Logged In")
         except TimeoutException:
             logger.error("Login verification failed: Dashboard element not found.")
-            self.save_screenshot("login_verification_failure")
+            self.driver.save_screenshot("login_verification_failure")
             raise ConnectionError("Login failed: Could not reach dashboard.")

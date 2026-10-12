@@ -9,7 +9,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
     handlers=[
-        logging.FileHandler("Day 52/logs/naan_bot.log"),
+        logging.FileHandler("logs/naan_bot.log"),
         logging.StreamHandler(),
     ],
 )

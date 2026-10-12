@@ -22,28 +22,39 @@ class InternetSpeedTwitterBot:
 
     def get_internet_speed(self):
         self.driver.get(self.url)
-        self.wait.until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, ".start-button a"))
-        ).click()
-
-        time.sleep(60)
-
         print("Getting ready to pull the data")
-
-        time.sleep(3)
+        go_button = self.wait.until(
+            EC.element_to_be_clickable(
+                (
+                    By.XPATH,
+                    "//*[@id='root']/div/div[1]/div/div[2]/div[2]/div[2]/div/div/div[2]/div[2]/button",
+                )
+            )
+        )
+        go_button.click()
+        input("Press Enter after the speed test is complete...")
 
         self.down = float(
             self.wait.until(
-                EC.visibility_of_element_located((By.CLASS_NAME, "download-speed"))
+                EC.visibility_of_element_located(
+                    (
+                        By.XPATH,
+                        "//*[@id='root']/div/div[1]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[2]/div[1]/div[1]/div/h3",
+                    )
+                )
             ).text
         )
 
         self.up = float(
             self.wait.until(
-                EC.visibility_of_element_located((By.CLASS_NAME, "upload-speed"))
+                EC.visibility_of_element_located(
+                    (
+                        By.XPATH,
+                        "//*[@id='root']/div/div[1]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[2]/div[1]/div[2]/div/h3",
+                    )
+                )
             ).text
         )
-
         print(f"Down: {self.down}")
         print(f"Up: {self.up}")
         time.sleep(3)
