@@ -1,0 +1,106 @@
+{% include "header.html" %}
+
+<style>
+  .comment-avatar {
+    width: 35px;
+    height: 35px;
+  }
+
+  .comment-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+</style>
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{{post.img_url}}')">
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-heading">
+          <h1>{{ post.title }}</h1>
+          <h2 class="subheading">{{ post.subtitle }}</h2>
+          <span class="meta"
+            >Posted by
+            <a href="#">{{ post.author.name }}</a>
+            on {{ post.date }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        {{ post.body|safe }}
+        <!--TODO: Only show Edit Post button if user id is 1 (admin user) -->
+        {% if current_user.is_authenticated and ((current_user.id ==
+        post.author_id or current_user.is_admin)) %}
+        <div class="d-flex justify-content-end mb-4">
+          <a
+            class="btn btn-primary float-right"
+            href="{{ url_for('main.edit_post', post_id=post.id) }}"
+            >Edit Post</a
+          >
+        </div>
+        {% endif %}
+        <!-- Comment Form -->
+        {% if current_user.is_authenticated %}
+        <div class="comment-form mt-4">
+          <form
+            method="POST"
+            action="{{ url_for('main.add_comment', post_id=post.id) }}"
+          >
+            {{ comment_form.hidden_tag() }}
+
+            <div class="form-group mb-3">
+              {{ comment_form.body.label(class="form-label") }} {{
+              comment_form.body(class="form-control", rows=6) }}
+            </div>
+            <div class="form-group mb-4">
+              {{ comment_form.submit(class="btn btn-primary") }}
+            </div>
+          </form>
+        </div>
+        {% endif %}
+
+        <!-- Comments Area -->
+        <!-- TODO: Add a CKEditor for commenting below -->
+        <!-- Comments Area -->
+        <section class="comments mt-5">
+          <h3 class="mb-4">Comments ({{ post.comments|length }})</h3>
+
+          {% for comment in post.comments %}
+          <div class="comment-card d-flex mb-4">
+            <div class="comment-avatar flex-shrink-0">
+              <img
+                src="{{ comment.author.get_avatar_url() }}"
+                alt="{{ comment.author.name }}'s avatar"
+              />
+            </div>
+            <div class="comment-content ms-3">
+              <div class="d-flex align-items-baseline flex-wrap">
+                <strong class="me-2">{{ comment.author.name }}</strong>
+                <small class="text-muted">{{ comment.display_date() }}</small>
+              </div>
+              <div class="comment-body mt-1">{{ comment.body|safe }}</div>
+            </div>
+          </div>
+          {% else %}
+          <p class="text-muted">
+            No comments yet. Be the first to share your thoughts.
+          </p>
+          {% endfor %}
+        </section>
+      </div>
+    </div>
+  </div>
+</article>
+
+{% include "footer.html" %}
