@@ -1,9 +1,3 @@
-from flask_gravatar import Gravatar
-
-from sqlalchemy import Integer, String, Text
-
-# Import your forms from the forms.py
-from forms.post_form import CreatePostForm
 from __init__ import create_app
 
 """
