@@ -43,3 +43,11 @@ user_data/
 **/chrome_profile/
 **/selenium_profile/
 **/user_data/
+
+# Database
+instance/
+*.db
+*.sqlite3
+
+# Your venv
+.angela-venv/
