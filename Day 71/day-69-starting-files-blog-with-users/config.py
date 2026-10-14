@@ -1,13 +1,15 @@
+import os
 from datetime import timedelta
 
 
 class Config:
-    SECRET_KEY = "your_secret_key_here"
+    SECRET_KEY = os.environ.get("SECRET_KEY", "dev-key-change-me")
 
-    SQLALCHEMY_DATABASE_URI = "sqlite:///posts.db"
+    SQLALCHEMY_DATABASE_URI = os.environ.get(
+        "DB_URI",
+        "sqlite:///posts.db",
+    )
 
-    DEBUG = True
+    DEBUG = os.environ.get("FLASK_DEBUG", "false").lower() == "true"
 
-    SESSION_PERMANENT = True
-    PERMANENT_SESSION_LIFETIME = timedelta(days=30)
-    REMEMBER_COOKIE_DURATION = timedelta(days=30)
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
